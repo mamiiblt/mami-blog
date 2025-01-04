@@ -15,7 +15,7 @@ export const footerData = {
 export const homePage = {
   title: 'Welcome To My Blog Site',
   description:
-    'You can find the blogs I currently write in this pagr.',
+    'You can find the blogs I currently write in this page',
 }
 
 export const blogsPage = {
