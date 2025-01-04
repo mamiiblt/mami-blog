@@ -14,9 +14,9 @@ useHead({
 
 // Generate OG Image
 defineOgImageComponent('About', {
-  headline: 'Greetings 👋',
+  headline: 'Hello 👋',
   title: navbarData.homeTitle,
-  description: "Welcome to mamiiblt's blog',
+  description: "Welcome to mamiiblt's blog",
   link: '/riyad.jpg',
 })
 </script>
