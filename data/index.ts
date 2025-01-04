@@ -30,7 +30,7 @@ export const categoryPage = {
 }
 
 export const aboutPage = {
-  title: 'Muhammed Ali BULUT',
+  title: 'Muhammed Ali Bulut',
   description: 'Independent Software Developer',
   aboutMe:
     "Hello, if you ask who I am, you can see me as someone who has devoted his life entirely to software development.",
@@ -40,8 +40,8 @@ export const seoData = {
   title: `mamiiblt's blog`,
   ogTitle: `a`,
   description: 'a',
-  twitterDescription: 'a'
-    'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp',
+  twitterDescription: 'a',
+  image: 'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp',
   mySite: 'https//mamiiblt.me',
   twitterHandle: '@mamiiblt',
   mailAddress: 'mami@mamiiblt.me',
