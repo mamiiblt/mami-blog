@@ -1,26 +1,22 @@
 export const navbarData = {
-  homeTitle: "mamiiblt's area",
+  homeTitle: "mamiiblt's blog",
 }
 
 export const footerData = {
-  author: 'mamiiblt',
-  aboutAuthor:
-    'Hello, I am Muhammad Ali, also known as Mami.',
+  author: 'Muhammed Ali',
   authorInterest:
-    "I am generally interested in areas such as mobile application development and reverse engineering, especially Java, JavaScript and C#.",
-  aboutTheSite:
-    "You can find everything about me, my projects and other things in this website!",
+    "If you want to contact me, you can contact me via Telegram, GitHub and email."
 }
 
 export const homePage = {
-  title: 'Welcome To My Blog Site',
+  title: 'Welcome 👋',
   description:
-    'You can find the blogs I currently write in this page',
+    'You can find the articles I have written about my projects and other things here.',
 }
 
 export const blogsPage = {
-  title: 'All Blogs',
-  description: 'Here you will find all the blog posts I have written & published on this site.',
+  title: 'All Articles',
+  description: 'Here you will find all the article posts I have written & published on this site.',
 }
 
 export const categoryPage = {
@@ -30,19 +26,20 @@ export const categoryPage = {
 }
 
 export const aboutPage = {
-  title: 'Muhammed Ali Bulut',
+  title: 'Muhammed Ali',
   description: 'Independent Software Developer',
   aboutMe:
-    "Hello, if you ask who I am, you can see me as someone who has devoted his life entirely to software development.",
+    "Hello! I am Muhammad Ali (a.k.a. mami, mamiiblt). Usually I'm working mainly on Android development, Web, AI and some reverse engineering projects/ apps. When I'm not crafting code, you can find me summoning solutions to problems on online judges. Just don't ask me to cast any love spells, my magic only works on machines!",
 }
 
 export const seoData = {
   title: `mamiiblt's blog`,
-  ogTitle: `a`,
-  description: 'a',
-  twitterDescription: 'a',
-  image: 'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp',
-  mySite: 'https//mamiiblt.me',
+  ogTitle: `Let's learn Javascript, Typescript, Vue, Nuxt, & Problem Solving - Riyads Blog | Riyad's Blog`,
+  description: `Hi I am Riyad. A Software Engineer at AppsCode, with over 2.5+ years experience in software development. - Riyads Blog | Riyad's Blog`,
+  twitterDescription: `Riyad's Blog, where I play around with Nuxt, Vue, and more and showcase my blog, resources, etc - Riyads Blog | Riyad's Blog`,
+  image:
+    'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp',
+  mySite: 'https://mamiiblt.me',
   twitterHandle: '@mamiiblt',
   mailAddress: 'mami@mamiiblt.me',
 }

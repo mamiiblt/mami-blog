@@ -1,5 +1,25 @@
 <script lang="ts" setup>
-const { data } = await useAsyncData('home', () => queryContent('/blogs').sort({ _id: -1 }).find())
+import { makeFirstCharUpper } from '@/utils/helper'
+
+const { data: dataBlog } = await useAsyncData('home', () => queryContent('/blogs').sort({ _id: -1 }).find())
+
+const { data: dataCategory } = await useAsyncData('all-blog-post-for-category', () =>
+  queryContent('/blogs').sort({ _id: -1 }).find(),
+)
+
+const allTags = new Map()
+
+dataCategory.value?.forEach((blog) => {
+  const tags: Array<string> = blog.tags || []
+  tags.forEach((tag) => {
+    if (allTags.has(tag)) {
+      const cnt = allTags.get(tag)
+      allTags.set(tag, cnt + 1)
+    } else {
+      allTags.set(tag, 1)
+    }
+  })
+})
 
 const elementPerPage = ref(5)
 const pageNumber = ref(1)
@@ -7,7 +27,7 @@ const searchTest = ref('')
 
 const formattedData = computed(() => {
   return (
-    data.value?.map((articles) => {
+    dataBlog.value?.map((articles) => {
       return {
         path: articles._path,
         title: articles.title || 'no-title available',
@@ -82,6 +102,16 @@ defineOgImage({
 
 <template>
   <main class="container max-w-5xl mx-auto text-zinc-600">
+    <CategoryHero />
+    <div class="flex flex-wrap px-6 mt-12 gap-3">
+      <CategoryCard
+        v-for="topic in allTags"
+        :key="topic[0]"
+        :title="makeFirstCharUpper(topic[0])"
+        :count="topic[1]"
+      />
+    </div>
+
     <ArchiveHero />
 
     <div class="px-6">

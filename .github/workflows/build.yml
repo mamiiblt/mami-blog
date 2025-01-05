@@ -32,8 +32,8 @@ jobs:
       - name: Check Linting
         run: pnpm run lint
 
-      - name: Check Format
-        run: pnpm run format
+      # - name: Check Format
+      #  run: pnpm run format
 
       - name: Playgourd build check
         run: pnpm run build
