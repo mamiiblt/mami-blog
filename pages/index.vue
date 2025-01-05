@@ -7,7 +7,7 @@ useHead({
     {
       name: 'description',
       content:
-        "Welcome to mamiiblt's blog",
+        'Welcome To My Blog Site. You can find blogs I have written about my projects and other things here',
     },
   ],
 })
@@ -16,8 +16,8 @@ useHead({
 defineOgImageComponent('About', {
   headline: 'Hello 👋',
   title: navbarData.homeTitle,
-  description: "Welcome to mamiiblt's blog",
-  link: '/riyad.jpg',
+  description: 'You can find anything about me in here!',
+  link: '/mamiiblt.jpg',
 })
 </script>
 

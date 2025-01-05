@@ -15,9 +15,6 @@ import { categoryPage } from '~/data'
           {{ categoryPage.description }}
         </p>
       </div>
-      <div class="px-6 justify-self-center">
-        <LogoDogs />
-      </div>
     </div>
   </div>
 </template>
